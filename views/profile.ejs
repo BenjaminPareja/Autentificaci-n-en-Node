@@ -31,6 +31,27 @@
                 </p>
 
             </div>
+
+
+        </div>
+        <div class="col-sm-6">
+            <div class="well">
+                <form action="/pswchange" method="post">
+                    <h3><span class="fa fa-user"></span> Change Password</h3>
+                    <label>User ID</label>
+                    <input type="text" class="form-control" name="userID" readonly value=<%= user.local.userID %>>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <!--div class="form-group">
+                        <label>Re-type Password</label>
+                        <input type="password" class="form-control" name="password-retype">
+                    </div-->
+                    <button type="submit" class="btn btn-warning btn-lg">Save</button>
+                </form>
+            </div>
+
         </div>
 
     </div>
